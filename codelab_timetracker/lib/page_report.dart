@@ -138,10 +138,11 @@ class _PageReportState extends State<PageReport> {
                 mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Container(
-                      width: 100.0,
+                      width: 125.0,
                       child: TextButton(
                         style: TextButton.styleFrom(
-                          textStyle: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold)
+                          textStyle: const TextStyle(fontSize: 19, fontWeight:
+                          FontWeight.bold)
                         ),
                         onPressed: () {},
                         child: const Text('Generate'),
