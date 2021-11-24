@@ -72,7 +72,7 @@ class _PageReportState extends State<PageReport> {
                     Text(DateFormat('yyyy-MM-dd').format(fromValue)),
                     IconButton(onPressed: _pickFromDate,
                         icon: Icon(Icons
-                        .calendar_today,
+                        .date_range,
                         color: Colors.blue))
                   ]
               ),
@@ -84,7 +84,7 @@ class _PageReportState extends State<PageReport> {
                     ),
                     Text(DateFormat('yyyy-MM-dd').format(toValue)),
                     IconButton(onPressed: _pickToDate, icon: Icon(Icons
-                        .calendar_today,
+                        .date_range,
                         color: Colors.blue))
                   ]
               ),

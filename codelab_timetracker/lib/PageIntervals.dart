@@ -1,6 +1,7 @@
 // ignore: file_names
 // ignore_for_file: file_names
 
+import 'package:codelab_timetracker/page_activities.dart';
 import 'package:codelab_timetracker/tree.dart' as Tree;
 import 'package:flutter/material.dart';
 
@@ -27,8 +28,9 @@ class _PageIntervalsState extends State<PageIntervals> {
           title: Text(tree.root.name),
           actions: <Widget>[
             IconButton(icon: Icon(Icons.home),
-                onPressed: () {}
-              // TODO go home page = root
+                onPressed: () {
+                  Navigator.of(context).popUntil((route) => route.isFirst);
+                }
             ),
             // TODO other actions
           ]

@@ -26,14 +26,17 @@ class _PageActivitiesState extends State<PageActivities> {
         title: Text(tree.root.name),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.home),
-              onPressed: () {
-                  Navigator.of(context)
-                    .push(MaterialPageRoute<void>(
-                    builder: (context) => PageReport(),
-                  ));
+              onPressed: () {Navigator.of(context).popUntil((route) => route.isFirst);
               },
-              // TODO go home page = root
           ),
+          IconButton(icon: Icon(Icons.library_books),
+            onPressed: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute<void>(
+                builder: (context) => PageReport(),
+              ));
+            },
+          )
           // TODO other actions
         ]
       ),
